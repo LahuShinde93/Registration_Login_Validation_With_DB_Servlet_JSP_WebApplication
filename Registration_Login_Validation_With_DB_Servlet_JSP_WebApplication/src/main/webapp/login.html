@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #ffffff;
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        form input[type="text"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        form a {
+            text-decoration: none;
+            display: inline-block;
+            color: #4caf50;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<form action="LoginUserServlet" method="post">
+    <label for="uname">User Name:</label>
+    <input type="text" id="uname" name="uname" placeholder="Enter your username" required><br>
+    
+    <label for="pass">User Password:</label>
+    <input type="password" id="pass" name="pass" placeholder="Enter your password" required><br><br>
+    
+    <input type="submit" value="Login"><br><br>
+    
+    <a href="RegisterUser.html">Register</a><br><br>
+    <a href="ViewUserServlet">View All Users</a>
+</form>
+
+</body>
+</html>
